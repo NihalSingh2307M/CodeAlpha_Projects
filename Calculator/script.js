@@ -3,25 +3,65 @@ let buttons = document.querySelectorAll('button');
 
 let string = "";
 let arr = Array.from(buttons);
+
 arr.forEach(button => {
     button.addEventListener('click', (e) =>{
-        if(e.target.innerHTML == '='){
-            string = eval(string);
-            input.value = string;
-        }
+        handleInput(e.target.innerHTML);
+    });
+});
 
-        else if(e.target.innerHTML == 'AC'){
-            string = "";
-            input.value = string;
+
+document.addEventListener('keydown', (e) => {
+    const key = e.key;
+
+   
+    if(/[0-9+\-*/.]/.test(key)) {
+        string += key;
+        input.value = string;
+    }
+
+ 
+    else if(key === 'Enter') {
+        try {
+            string = eval(string);
+        } catch {
+            string = "Error";
         }
-        else if(e.target.innerHTML == 'DEL'){
-            string = string.substring(0, string.length-1);
-            input.value = string;
+        input.value = string;
+    }
+
+   
+    else if(key === 'Backspace') {
+        string = string.substring(0, string.length - 1);
+        input.value = string;
+    }
+
+    
+    else if(key === 'Escape') {
+        string = "";
+        input.value = string;
+    }
+});
+
+function handleInput(value) {
+    if(value == '='){
+        try {
+            string = eval(string);
+        } catch {
+            string = "Error";
         }
-        else{
-            string += e.target.innerHTML;
-            input.value = string;
-        }
-        
-    })
-})
+        input.value = string;
+    }
+    else if(value == 'AC'){
+        string = "";
+        input.value = string;
+    }
+    else if(value == 'DEL'){
+        string = string.substring(0, string.length-1);
+        input.value = string;
+    }
+    else{
+        string += value;
+        input.value = string;
+    }
+}
