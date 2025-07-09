@@ -10,7 +10,6 @@ const gallery = document.querySelector('.gallery');
 const video = document.getElementById('bg-video');
 const nav = document.getElementById('nav');
 
-document.documentElement.style.scrollBehavior = "smooth";
 
 function openLightbox(img) {
   document.getElementById('lightbox').style.display = 'flex';
