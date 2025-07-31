@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=AfM2kzPzTz6Q&format=png&color=000000" type="image/x-icon">
+    
+    <!-- CSS FILES - Load in correct order -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>Nihal</h3>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div id="loader">
+            <div id="topheading">
+                <h5>Design portfolio</h5>
+                <h5>&copy; 2025</h5>
+            </div>
+            <div id="loading-circle"></div>
+            <div id="span">
+                <span id="loader-text"><h1>Nihal Singh is a</h1></span>
+            </div>
+        </div>
+        <div id="loader-elem"></div>
+        
+        <!-- Creative Home Section -->
+        <section id="home">
+            <div class="creative-container">
+                <div class="left-content">
+                    <div class="main-title">Creative</div>
+                    <div class="creative-text">Web</div>
+                    <div class="visual-text">Developer</div>
+                    
+                    <div class="description">
+                        I AM NIHAL SINGH, I CREATE Unconventional YET FUNCTIONAL & VISUALLY PLEASING INTERFACES FOR THE MOBILE AND WEB.
+                    </div>
+                    
+                    <button class="cta-button">Explore My Work</button>
+                </div>
+            </div>
+
+            <!-- Uncomment when you want to add Spline -->
+            <!-- <div class="spline">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.37/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/MYp3usEbMmrJqBXc/scene.splinecode"></spline-viewer>
+            </div> -->
+            
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I'm a creative designer with a passion for crafting unique digital experiences. With years of experience in UI/UX design, web development, and branding, I help businesses bring their vision to life.</p>
+                        <p>My approach combines aesthetic excellence with functional design, ensuring that every project not only looks great but also delivers exceptional user experiences.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>UI/UX Design</li>
+                            <li>Web Development</li>
+                            <li>Brand Identity</li>
+                            <li>Motion Graphics</li>
+                            <li>Typography</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section with Swiper - FIXED STRUCTURE -->
+        <section id="work" class="section">
+            <div class="section-content">
+                <h2>My Work</h2>
+                
+                <!-- Swiper Container -->
+                <div class="swiper work-swiper">
+                    <div class="swiper-wrapper">
+                        
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="work-item">
+                                <div class="work-image">
+                                    <div class="placeholder-image">
+                                        <video muted autoplay loop src="./videos/1.mp4"></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="work-item">
+                                <div class="work-image">
+                                    <div class="placeholder-image">
+                                        <video muted autoplay loop src="./videos/2.mp4"></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="work-item">
+                                <div class="work-image">
+                                    <div class="placeholder-image">
+                                        <video muted autoplay loop src="./videos/3.mp4"></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="work-item">
+                                <div class="work-image">
+                                    <div class="placeholder-image">
+                                        <video muted autoplay loop src="./videos/4.mp4"></video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- Swiper Navigation -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-content">
+                <h2>Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's Work Together</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or want to work together, feel free to reach out.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <strong>Email:</strong>
+                                <span>nihal@example.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Phone:</strong>
+                                <span>+91 12345 67890</span>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Location:</strong>
+                                <span>Delhi, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-h/14Uo5U37K1LDfIflGY2YV3YFcO7R3r9nLSj5H/HTstc7VnXX7QqRAEFxSCdKH4nBXcZy8E1g2HjKQnC7Zr4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
